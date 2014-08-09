@@ -1,13 +1,23 @@
-require 'strava/follow'
+require 'strava'
+require 'strava/coding_question'
 
-describe Strava::Follow do
-  context 'Bob follows Joe' do
+describe Strava::CodingQuestion do
+  let(:joe) { Strava::Models::Athlete.new(1, 'joe', 'foo', Date.new(2000, 1, 1)) }
+  let(:bob) { Strava::Models::Athlete.new(2, 'bob', 'bar', Date.new(1980, 8, 8)) }
+  let(:store) { Strava::DataStore.new }
+  let(:service) { Strava::Services::FollowService.new(store) }
+
+  before do
+    store.add_athlete(joe)
+    store.add_athlete(bob)
+  end
+
+  context 'Bob follows Joe,' do
     before do
       # Establish follows relationship between Bob and Joe here
     end
 
     it 'Joe should be one of the people Bob follows' do
-      # implement specs
     end
 
     it 'Bob should not be one of the people Joe follows' do
@@ -23,8 +33,8 @@ describe Strava::Follow do
     end
   end
 
-  context 'Blocking' do
-    context 'Mary blocks Bob' do
+  context 'Blocking:' do
+    context 'when Mary blocks Bob,' do
       before do
         # Establish block relationship between Mary and Bob
       end
@@ -45,7 +55,7 @@ describe Strava::Follow do
 
       end
 
-      context 'Bob attempts to follow Mary' do
+      context 'when Bob attempts to follow Mary,' do
         before do
           # Bob attempts to follow Mary
         end

@@ -1,11 +1,11 @@
 # coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'coding/q/follow/version'
+require 'strava/version'
 
 Gem::Specification.new do |spec|
   spec.name          = "coding-q-follow"
-  spec.version       = Coding::Q::Follow::VERSION
+  spec.version       = Strava::VERSION
   spec.authors       = ["Erick Herrarte"]
   spec.email         = ["erick@strava.com"]
   spec.summary       = %q{TODO: Write a short summary. Required.}
