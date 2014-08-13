@@ -34,7 +34,7 @@ describe Strava::CodingQuestion do
   end
 
   context 'Blocking:' do
-    context 'when Mary blocks Bob,' do
+    context 'when Mary blocks Joe,' do
       before do
         # Establish block relationship between Mary and Bob
       end
