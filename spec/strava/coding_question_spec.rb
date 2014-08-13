@@ -55,16 +55,16 @@ describe Strava::CodingQuestion do
 
       end
 
-      context 'when Bob attempts to follow Mary,' do
+      context 'when Joe attempts to follow Mary,' do
         before do
-          # Bob attempts to follow Mary
+          # Joe attempts to follow Mary
         end
 
-        it 'Mary should not be one of the people Bob follows' do
+        it 'Mary should not be one of the people Joe follows' do
           # implement specs
         end
 
-        it 'Bob should not be one of the people following Mary' do
+        it 'Joe should not be one of the people following Mary' do
 
         end
       end
