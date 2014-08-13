@@ -1,29 +1,22 @@
-# Coding::Q::Follow
-
-TODO: Write a gem description
+# Strava Programming Problem - Follows
 
 ## Installation
 
-Add this line to your application's Gemfile:
+- clone this repository
+- install bundler (http://bundler.io/)
+- install Ruby 2.1.1 or higher
+- run ```bundle exec rspec``` from the root of this repository
 
-    gem 'coding-q-follow'
+## The problem
 
-And then execute:
+Your job is to implement a simple system to model follower/friend relationships between athletes. The system should support:
 
-    $ bundle
+- one athlete following another athlete
+- one athlete requesting to follow another athlete (if the target athlete must approve all his/her followers)
+- one athlete blocking another athlete
 
-Or install it yourself as:
+The ```coding_question_spec.rb``` file outlines in detail the expected behavior. Once all the tests in that spec file pass, you're done!
 
-    $ gem install coding-q-follow
+Please send your solutions to us via email (chris@strava.com) - you can zip up your cloned version of this repository. Along with the code, please include a written introduction to your solution, that explains the design and implementation decisions you made and why.
 
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( https://github.com/[my-github-username]/coding-q-follow/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create a new Pull Request
+If you have any questions, or have trouble running the specs, please let me know!
